@@ -9,12 +9,14 @@ namespace domain.objects
         public string Username { get; private set; }
         public string Password { get; private set; }
         public string Name { get; private set; }
+        public DateTime Birthday { get; private set; }
 
-        public User(int id, string username, string password, string name) : base(id)
+        public User(int id, string username, string password, string name, DateTime bd) : base(id)
         {
             Username = username;
             Password = password;
             Name = name;
+            Birthday = bd;
         }
     }
 }
